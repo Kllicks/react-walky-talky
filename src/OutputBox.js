@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function OutputBox(props) {
-    return (
-        <div>
-            
-        </div>
-    );
-
+class OutputBox extends Component {
+    render() {
+        return (
+            <div>
+                <p>
+                    {this.props.outputValue}
+                </p>
+            </div>
+        );
+    }
 }
 
 export default OutputBox;

@@ -13,10 +13,22 @@ class TranslationApp extends Component {
     render() {
         return (
             <div>
-                <InputBox/>
-                <OutputBox/>
+                <h1>Walky Talky App</h1>
+                <p>Type Here</p>
+                <InputBox
+                    inputValue={this.state.value} onChange={this._onChange}
+                />
+                <OutputBox
+                    outputValue={this.state.value}
+                />
             </div>
         );
+    }
+
+    _onChange = event => {
+        this.setState({
+            value: event.target.value
+        });
     }
 }
 

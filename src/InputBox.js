@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function InputBox(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+class InputBox extends Component {
+    render() {
+        return (
+            <div>
+                <input value={this.props.inputValue} onChange={this.props.onChange}></input>
+            </div>
+        );
+    }
 }
 
 export default InputBox;
