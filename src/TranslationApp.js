@@ -33,6 +33,7 @@ class TranslationApp extends Component {
     //         value: event.target.value
     //     });
     // }
+    
     _onChange = (value) => {
         this.setState({
             value
