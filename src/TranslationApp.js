@@ -16,7 +16,10 @@ class TranslationApp extends Component {
                 <h1>Walky Talky App</h1>
                 <p>Type Here</p>
                 <InputBox
-                    inputValue={this.state.value} onChange={this._onChange}
+                    inputValue={this.state.value} 
+                    // onChange={this._onChange}
+                    handleChange={this._onChange}
+
                 />
                 <OutputBox
                     outputValue={this.state.value}
@@ -25,9 +28,14 @@ class TranslationApp extends Component {
         );
     }
 
-    _onChange = event => {
+    // _onChange = event => {
+    //     this.setState({
+    //         value: event.target.value
+    //     });
+    // }
+    _onChange = (value) => {
         this.setState({
-            value: event.target.value
+            value
         });
     }
 }
