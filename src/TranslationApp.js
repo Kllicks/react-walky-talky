@@ -22,6 +22,7 @@ class TranslationApp extends Component {
 
                 />
                 <OutputBox
+                    // outputValue={this.state.value.toUpperCase()}
                     outputValue={this.state.value}
                 />
             </div>
@@ -33,7 +34,7 @@ class TranslationApp extends Component {
     //         value: event.target.value
     //     });
     // }
-    
+
     _onChange = (value) => {
         this.setState({
             value
