@@ -17,6 +17,7 @@ import React from 'react';
 const InputBox = (props) => {
     return (
         <input 
+            className='input-box'
             value={props.inputValue}
             onChange={(e) => {
                 props.handleChange(e.target.value);

@@ -15,7 +15,7 @@ class TranslationApp extends Component {
 
     render() {
         return (
-            <div>
+            <div className='translation-app'>
                 <h1>Walky Talky App</h1>
                 <p>Type Here</p>
                 <InputBox

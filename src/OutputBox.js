@@ -24,7 +24,7 @@ const OutputBox = (props) => {
     }
     
     return (
-        <div>{textToDisplay}</div>
+        <div className='output-box'>{textToDisplay}</div>
     )
 };
 
