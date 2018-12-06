@@ -19,7 +19,7 @@ class TranslationApp extends Component {
                     inputValue={this.state.value} onChange={this._onChange}
                 />
                 <OutputBox
-                    outputValue={this.state.value.toUpperCase()}
+                    outputValue={this.state.value}
                 />
             </div>
         );
