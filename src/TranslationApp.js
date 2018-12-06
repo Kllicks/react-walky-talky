@@ -25,6 +25,10 @@ class TranslationApp extends Component {
                     // outputValue={this.state.value.toUpperCase()}
                     outputValue={this.state.value}
                 />
+                <OutputBox
+                    outputValue={this.state.value}
+                    doL33t={true}
+                />
             </div>
         );
     }
